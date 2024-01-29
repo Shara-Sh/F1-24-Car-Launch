@@ -1,15 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamation } from '@fortawesome/free-solid-svg-icons'
-
 function F1Card(props) {
-  function handleInfo() {
-    const info = document.getElementById("info-collapse")
-    info.style.display = "none";
-  }
-  
   return (
     <>
-        <div className="f1-card d-flex p-2 gap-3 rounded-3 mb-lg-3 mb-2 col-lg-5 me-3" style={{backgroundColor: props.teamColor}}>
+        <div className="f1-card d-flex p-2 gap-3 rounded-3 mb-3 col-lg-5 me-lg-3" style={{backgroundColor: props.teamColor}}>
             <div className="image-container d-flex align-items-center bg-white rounded-2">
               <img className="team-image rounded-2 w-100" src={props.teamImage} />
             </div>

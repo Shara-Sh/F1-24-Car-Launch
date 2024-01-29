@@ -52,8 +52,8 @@ function App() {
   return (
     <>
       <div className='container'>
-        <h1 className='text-center p-4'><span>F1</span> 20<span>24</span> Car Launch</h1>
-        <div className='row justify-content-md-center'>
+        <h1 className='text-header text-center p-4'><span>F1</span> 20<span>24</span> Car Launch</h1>
+        <div className='row justify-content-md-center container pe-0'>
           <F1Card
           teamImage={Williams}
           teamColor="#37BEDD"
