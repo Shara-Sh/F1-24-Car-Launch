@@ -11,25 +11,25 @@ import McLaren from '../src/assets/mclaren.jpg'
 import RedBull from '../src/assets/redbull.jpg'
 
 function App() {
-  const currenctTime = new Date()
+  const currentTime = new Date()
 
   function calcDate(teamTime) {
-    const diffTime = Math.abs(currenctTime - teamTime)
+    const diffTime = Math.abs(currentTime - teamTime)
     const timeLeft = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
     return timeLeft
   }
   
   const wRevealDate = 5
-  const wTimeLeft = calcDate(new Date(`2024-02-${wRevealDate}`))
+  const wTimeLeft = calcDate(new Date(`2024-02-0${wRevealDate}`))
 
   const kRevealDate = 5
-  const kTimeLeft = calcDate(new Date(`2024-02-${kRevealDate}`))
+  const kTimeLeft = calcDate(new Date(`2024-02-0${kRevealDate}`))
 
   const aRevealDate = 7
-  const aTimeLeft = calcDate(new Date(`2024-02-${aRevealDate}`))
+  const aTimeLeft = calcDate(new Date(`2024-02-0${aRevealDate}`))
 
   const rRevealDate = 8
-  const rTimeLeft = calcDate(new Date(`2024-02-${rRevealDate}`))
+  const rTimeLeft = calcDate(new Date(`2024-02-0${rRevealDate}`))
 
   const hRevealDate = 11
   const hTimeLeft = calcDate(new Date(`2024-02-${hRevealDate}`))
@@ -72,7 +72,7 @@ function App() {
           teamName="Kick Sauber"
           revealDate={kRevealDate}
           timeLeft={kTimeLeft}
-          wc={"N/A"}
+          wc={0}
           pp={1}
           fl={7}
           hrf={"1 (x1)"}
@@ -96,11 +96,11 @@ function App() {
           teamName="RB"
           revealDate={rRevealDate}
           timeLeft={rTimeLeft}
-          wc={"N/A"}
+          wc={0}
           pp={1}
           fl={3}
           hrf={"1 (x2)"}
-          // fte={}
+          fte={1985}
           />
           <F1Card
           teamImage={Haas}
@@ -108,11 +108,11 @@ function App() {
           teamName="Haas"
           revealDate={hRevealDate}
           timeLeft={hTimeLeft}
-          wc={"N/A"}
+          wc={0}
           pp={1}
           fl={2}
           hrf={"4 (x1)"}
-          // fte={}
+          fte={2016}
           />
           <F1Card
           teamImage={AstonMartin}
@@ -120,11 +120,11 @@ function App() {
           teamName="Aston Martin"
           revealDate={amRevealDate}
           timeLeft={amTimeLeft}
-          wc={"N/A"}
+          wc={0}
           pp={1}
           fl={1}
           hrf={"1 (x1)"}
-          // fte={}
+          fte={2018}
           />
           <F1Card
           teamImage={Ferrari}
@@ -136,7 +136,7 @@ function App() {
           pp={249}
           fl={259}
           hrf={"1 (x244)"}
-          // fte={}
+          fte={1950}
           />
           <F1Card
           teamImage={Mercedes}
@@ -148,7 +148,7 @@ function App() {
           pp={129}
           fl={96}
           hrf={"1 (x116)"}
-          // fte={}
+          fte={1970}
           />
           <F1Card
           teamImage={McLaren}
@@ -160,7 +160,7 @@ function App() {
           pp={156}
           fl={165}
           hrf={"1 (x183)"}
-          // fte={}
+          fte={1966}
           />
           <F1Card
           teamImage={RedBull}
@@ -172,7 +172,7 @@ function App() {
           pp={95}
           fl={95}
           hrf={"1 (x113)"}
-          // fte={}
+          fte={1997}
           />
         </div>
       </div>

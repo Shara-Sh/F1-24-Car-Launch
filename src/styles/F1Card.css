@@ -15,12 +15,6 @@
     position: absolute;
 }
 
-.info-icon {
-    color: black;
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-
 .info-collapse {
     display: block;
 }
@@ -61,5 +55,8 @@ h2, h4, h5 {
     h5 {
         font-size: 1rem;
     }
-    
+
+    p {
+        font-size: 0.8rem;
+    }
 }
