@@ -57,42 +57,6 @@ function App() {
         </h1>
         <div className="row justify-content-md-center container pe-0">
           <F1Card
-            teamImage={Alpine}
-            teamColor="#2293D1"
-            teamName="Alpine"
-            revealDate={aRevealDate}
-            timeLeft={aTimeLeft}
-            wc={2}
-            pp={20}
-            fl={15}
-            hrf={"1 (x21)"}
-            fte={1986}
-          />
-          <F1Card
-            // teamImage={}
-            teamColor="#5E8FAA"
-            teamName="RB"
-            revealDate={rRevealDate}
-            timeLeft={rTimeLeft}
-            wc={0}
-            pp={1}
-            fl={3}
-            hrf={"1 (x2)"}
-            fte={1985}
-          />
-          <F1Card
-            teamImage={AstonMartin}
-            teamColor="#358C75"
-            teamName="Aston Martin"
-            revealDate={amRevealDate}
-            timeLeft={amTimeLeft}
-            wc={0}
-            pp={1}
-            fl={1}
-            hrf={"1 (x1)"}
-            fte={2018}
-          />
-          <F1Card
             teamImage={Ferrari}
             teamColor="#F91536"
             teamName="Ferrari"
@@ -179,6 +143,42 @@ function App() {
               fl={165}
               hrf={"1 (x183)"}
               fte={1966}
+            />
+            <F1Card
+              teamImage={Alpine}
+              teamColor="#2293D1"
+              teamName="Alpine"
+              revealDate={aRevealDate}
+              timeLeft="-"
+              wc={2}
+              pp={20}
+              fl={15}
+              hrf={"1 (x21)"}
+              fte={1986}
+            />
+            <F1Card
+              // teamImage={}
+              teamColor="#5E8FAA"
+              teamName="RB"
+              revealDate={rRevealDate}
+              timeLeft="-"
+              wc={0}
+              pp={1}
+              fl={3}
+              hrf={"1 (x2)"}
+              fte={1985}
+            />
+            <F1Card
+              teamImage={AstonMartin}
+              teamColor="#358C75"
+              teamName="Aston Martin"
+              revealDate={amRevealDate}
+              timeLeft="-"
+              wc={0}
+              pp={1}
+              fl={1}
+              hrf={"1 (x1)"}
+              fte={2018}
             />
           </div>
         </div>
