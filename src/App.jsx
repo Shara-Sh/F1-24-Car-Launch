@@ -1,8 +1,9 @@
 import F1Card from "./components/F1Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Williams from "../src/assets/williams.png";
-import KickSauber from "../src/assets/kick sauber.svg";
+import KickSauber from "../src/assets/kick.png";
 import Alpine from "../src/assets/alpine.png";
+import RB from "../src/assets/RB.png";
 import Haas from "../src/assets/haas.png";
 import AstonMartin from "../src/assets/aston martin.png";
 import Ferrari from "../src/assets/ferrari.png";
@@ -55,45 +56,7 @@ function App() {
         <h1 className="text-header text-center p-4">
           <span>F1</span> 20<span>24</span> Car Launch
         </h1>
-        <div className="row justify-content-md-center container pe-0">
-          <F1Card
-            teamImage={Ferrari}
-            teamColor="#F91536"
-            teamName="Ferrari"
-            revealDate={fRevealDate}
-            timeLeft={fTimeLeft}
-            wc={16}
-            pp={249}
-            fl={259}
-            hrf={"1 (x244)"}
-            fte={1950}
-          />
-          <F1Card
-            teamImage={Mercedes}
-            teamColor="#6CD3BF"
-            teamName="Mercedes"
-            revealDate={mRevealDate}
-            timeLeft={mTimeLeft}
-            wc={8}
-            pp={129}
-            fl={96}
-            hrf={"1 (x116)"}
-            fte={1970}
-          />
-          <F1Card
-            teamImage={RedBull}
-            teamColor="#3671C6"
-            teamName="Red Bull"
-            revealDate={rbRevealDate}
-            timeLeft={rbTimeLeft}
-            wc={6}
-            pp={95}
-            fl={95}
-            hrf={"1 (x113)"}
-            fte={1997}
-          />
-        </div>
-        <hr />
+        <div className="row justify-content-md-center container pe-0"></div>
         <div className="container">
           <div className="row justify-content-md-center container pe-0">
             <F1Card
@@ -110,7 +73,7 @@ function App() {
             />
             <F1Card
               teamImage={KickSauber}
-              teamColor="#00E701"
+              teamColor="#52e252"
               teamName="Kick Sauber"
               revealDate={kRevealDate}
               timeLeft="-"
@@ -157,8 +120,8 @@ function App() {
               fte={1986}
             />
             <F1Card
-              // teamImage={}
-              teamColor="#5E8FAA"
+              teamImage={RB}
+              teamColor="#6692ff"
               teamName="RB"
               revealDate={rRevealDate}
               timeLeft="-"
@@ -179,6 +142,42 @@ function App() {
               fl={1}
               hrf={"1 (x1)"}
               fte={2018}
+            />
+            <F1Card
+              teamImage={Ferrari}
+              teamColor="#F91536"
+              teamName="Ferrari"
+              revealDate={fRevealDate}
+              timeLeft="-"
+              wc={16}
+              pp={249}
+              fl={259}
+              hrf={"1 (x244)"}
+              fte={1950}
+            />
+            <F1Card
+              teamImage={Mercedes}
+              teamColor="#6CD3BF"
+              teamName="Mercedes"
+              revealDate={mRevealDate}
+              timeLeft="-"
+              wc={8}
+              pp={129}
+              fl={96}
+              hrf={"1 (x116)"}
+              fte={1970}
+            />
+            <F1Card
+              teamImage={RedBull}
+              teamColor="#3671C6"
+              teamName="Red Bull"
+              revealDate={rbRevealDate}
+              timeLeft="-"
+              wc={6}
+              pp={95}
+              fl={95}
+              hrf={"1 (x113)"}
+              fte={1997}
             />
           </div>
         </div>
