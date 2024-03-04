@@ -1,7 +1,7 @@
 import F1Card from "./components/F1Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Williams from "../src/assets/williams.png";
-import Kick from "../src/assets/kick.png";
+import Kick from "../src/assets/Kick.png";
 import Alpine from "../src/assets/alpine.png";
 import RB from "../src/assets/RB.png";
 import Haas from "../src/assets/haas.png";
